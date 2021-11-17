@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <title>formulario y tabla</title>
+    
+    <style>
+      table {
+        width: 700px;
+        color: white;
+        height: 200px;
+        text-align: center;
+        border-radius: 10px;
+        margin: 0 auto;
+        padding: 0 auto;
+      }
+
+      #celda1 {
+        background-color: #dd105e;
+      }
+
+      #celda4 {
+        background-color: #46466e;
+      }
+
+      .celda {
+        background-color: #bdbdd7;
+      }
+
+      form {
+        background-color: #e7eff3;
+        width: 700px;
+        margin: 0 auto;
+        padding: 0 auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="basededatos.com" method="POST">
+      <fieldset>
+        <legend>datos del estudiante</legend>
+        <input
+          type="text"
+          value="user"
+          placeholder="tu nombre..."
+          name="name"
+          required
+        />
+        nombre
+        <p></p>
+        <input
+          type="text"
+          value="user"
+          placeholder="tu apellido..."
+          name="name"
+          required
+        />
+        apellido
+        <p></p>
+        <input
+          type="email"
+          value="email"
+          placeholder="tu email..."
+          name="mail"
+          required
+        />
+        email
+        <p></p>
+        <input type="tel" value="tel" name="tel" placeholder="tu telefono..." />
+        telefono
+        <p></p>
+        <input
+          type="text"
+          value="direccion"
+          name="direccion"
+          placeholder="tu direccion..."
+        />
+        direccion
+      </fieldset>
+    </form>
+
+    <p></p>
+    <table>
+      <tr>
+        <td rowspan="2" id="celda1">BOOTCAMP</td>
+        <td class="celda">HTML</td>
+        <td class="celda">CSS</td>
+        <td colspan="2" id="celda4">JAVASCRIPT</td>
+      </tr>
+      <tr>
+        <td class="celda">NOV</td>
+        <td class="celda">DIC</td>
+        <td class="celda">ENE</td>
+        <td class="celda">ENE</td>
+      </tr>
+    </table>
+  </body>
+</html>
